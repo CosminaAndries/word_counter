@@ -10,18 +10,29 @@
 	
 </head>
 
-
-
-
 <body>
-
-
 <h1>Word Counter</h1> 
 <h4>Type the words in the textbox and click on the box to count the words</h4>
 
 <div class="container_cuvinte">
-   <textarea id="text-area" placeholder="Start typing, or copy and paste your document here..."></textarea>
+   <textarea id="text-area" placeholder="Start typing, or copy and paste your document here..."></textarea>  
 </div>
+    <div class="case_buttons">
+        <button id="sentence_case">Sentence case</button>
+        <button id="lower_case">lower case</button>
+        <button id="upper_case">UPPER CASE</button>
+        <button id="capitalized_case">Capitalized Case</button>
+        <button id="alternating_case">aLtErNaTiNg cAsE</button>
+        <button id="title_case">Title Case</button>
+        <button id="inverse_case">InVeRsE CaSe</button>
+		<button id="trash"><img src="4662651.jpg" width="20px"></button>
+    </div>
 
+<div class="inline-paragraf">
+   <p  id="text_afisare_nr_cuvinte" >Word count:0</p>  
+   <p  id="text_afisare_nr_paragrafe">Paragraphs count:0</p>
+   <p id="text_afisare_nr_propozitii">Senteces count:0</p>
+   
+  </div>
 </body>
 </html>
