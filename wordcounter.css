@@ -1,3 +1,4 @@
+
 body{
 height: 100%; /* Asigurăm că întregul document ocupă întreaga înălțime a ferestrei */
   font-family: Arial,sans-serif;
@@ -5,12 +6,10 @@ height: 100%; /* Asigurăm că întregul document ocupă întreaga înălțime a
  flex-direction: column;
  align-items:center;
  justify-items:center;
- background-image: url('46b2bba19db13a66ae08c86b77b15840.jpg');
+ background-image: url('Notebook Paper - Etsy.jpg');
  background-size: cover; /* Imaginea va acoperi întregul fundal */
   background-position: center; /* Centrează imaginea pe pagină */
 background-repeat: no-repeat;
-
-  
 }
 .container_cuvinte {
   position: relative;
@@ -55,4 +54,38 @@ textarea {
   pointer-events: none; /* Nu interferează cu scrierea */
   transition: opacity 0.2s ease-in-out;
 }
+.inline-paragraf{
+	 display: flex; /* Flexbox pentru a alinia elementele pe același rând */
+    justify-content: center; /* Aliniază elementele pe orizontală */
+    gap: 20px; /* Spațiu între paragrafe */
+        }
 
+#sentence_case{
+	background-color:black;
+	color:white;
+}
+#lower_case
+{
+	background-color:black;
+	color:white;
+}
+#upper_case{
+	background-color:black;
+	color:white;
+}
+#capitalized_case{
+	background-color:black;
+	color:white;
+}
+#alternating_case{
+	background-color:black;
+	color:white;
+}
+#title_case{
+	background-color:black;
+	color:white;
+}
+#inverse_case{
+	background-color:black;
+	color:white;
+}
