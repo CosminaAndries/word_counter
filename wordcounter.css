@@ -1,4 +1,3 @@
-
 body{
 height: 100%; /* Asigurăm că întregul document ocupă întreaga înălțime a ferestrei */
   font-family: Arial,sans-serif;
@@ -10,6 +9,8 @@ height: 100%; /* Asigurăm că întregul document ocupă întreaga înălțime a
  background-size: cover; /* Imaginea va acoperi întregul fundal */
   background-position: center; /* Centrează imaginea pe pagină */
 background-repeat: no-repeat;
+
+  
 }
 .container_cuvinte {
   position: relative;
@@ -81,11 +82,13 @@ textarea {
 	background-color:black;
 	color:white;
 }
-#title_case{
-	background-color:black;
-	color:white;
-}
 #inverse_case{
 	background-color:black;
 	color:white;
+}
+#copy_to_clipboard{
+	
+	background-color:black;
+	color:white;
+	
 }
