@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		 const trashButton=document.getElementById ("trash");
 		 const AlterningCaseButton=document.getElementById ("alternating_case");
 		 const InverseCaseButton=document.getElementById("inverse_case");
+		 const CopyCaseButton=document.getElementById("copy_to_clipboard");
+		 
 		 
 
    textArea.addEventListener("input", function () {
@@ -35,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 	
-	//Functia Sentence Case{
+	//Functia Sentence Case
 		SentenceCaseButton.addEventListener("click", function(){
 		var propozitii;
 		   let  text = textArea.value.trim();
@@ -152,11 +154,27 @@ AlterningCaseButton.addEventListener("click", function () {
 	  text=cuvinte.join(" ");
 	  textArea.value=text;
 	   });
+	    CopyCaseButton.addEventListener("click", function (){
+			 var textToCopy = textArea.value;
+			 navigator.clipboard.writeText(textToCopy)
+			 .then(() => {
+        alert("Text copied successfully!");
+    })
+    .catch(error => {
+      alert("Error copying text: ", error);
+    });
+	   
+  });
+	 
+	   
 	   });
 	 
 	 
 	 
 	
 	
+	
+	
+
 	
 	
